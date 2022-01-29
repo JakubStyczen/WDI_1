@@ -1,0 +1,24 @@
+#skończone
+import random
+
+gry = 3
+
+tajemnicza_liczba = random.randint(1, 11)
+print(tajemnicza_liczba)
+    
+while gry>0:
+    liczba_gracza = int(input('Spróbuj zgadnąć liczbę: '))
+    
+    if liczba_gracza == tajemnicza_liczba:
+        print('WYGRANA!!!')
+        break
+    else:
+        print('Nie udało Ci sie trafić. Twoja liczba jest', end=" ")
+        if tajemnicza_liczba > liczba_gracza:
+            print('mniejsza od wylosowanej.\nSpróbuj ponownie.')
+        else: 
+            print('wieksza od wylosowanej.\nSpróbuj ponownie.')
+    
+    gry -=1
+else:
+    print('Skończyły ci się próby :(')
