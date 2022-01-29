@@ -1,0 +1,10 @@
+#skończone
+sekundy = int(input('Podaj liczbę sekund: '))
+
+godziny = int(sekundy/3600)
+minuty = int(((sekundy % 3600)/60))
+reszta = sekundy %60
+
+
+print(f'{godziny}:{minuty}:{reszta}')
+
