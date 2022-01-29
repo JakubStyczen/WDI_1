@@ -1,0 +1,14 @@
+#skonczone
+
+for i in range(10):
+    podana = int(input('Podaj liczbę: \n'))
+    if i == 0:
+        najmniejsza = podana
+    else: 
+        if podana < najmniejsza:
+            najmniejsza = podana
+            
+print(f'Najmniejsza podana liczba to: {najmniejsza}')
+    
+    
+    
