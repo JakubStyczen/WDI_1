@@ -1,0 +1,9 @@
+#skonczone
+pierwsze = []
+for i in range(2, 100):
+    for j in range(2, i):
+        if (i % j) == 0:
+            break
+    else:
+        pierwsze.append(i)
+print(f'Liczby pierwsze z zakresu 2-99 to: {pierwsze}')
