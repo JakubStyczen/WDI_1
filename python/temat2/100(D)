@@ -1,0 +1,11 @@
+#skończone
+
+ilość_kombinacji = 0
+
+for liczba_dych in range(11):
+    for liczba_piatek in range(21):
+        for liczba_dwojek in range(51):
+            if liczba_dych*10 + liczba_piatek*5 + liczba_dwojek*2 == 100:
+                ilość_kombinacji += 1
+                
+print(ilość_kombinacji)
